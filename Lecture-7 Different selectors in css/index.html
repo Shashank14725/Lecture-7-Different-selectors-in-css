@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /*
+        1.Element selector syntax
+
+        element{
+            property:value;
+        }
+        */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        /*
+        2.ID selector syntax #
+
+        element#Id{
+            property:value;
+        }
+        */
+        span#a1 {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        /*
+        3.Class selector syntax .
+
+        element.Id{
+            property:value;
+        }
+        */
+        span.b1 {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        /*
+        4.Attribute selector syntax
+
+        element[name="value"]{
+            property:value;
+        }
+        */
+        a[href="https://www.google.com/"] {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+
+        }
+
+        /*
+        5.Universal selector syntax *
+
+        *{
+            property:value;
+        }
+        */
+        * {
+            border: 10px solid #000;
+
+        }
+
+        /*
+        6.Group/combinational selector syntax ,
+
+        element1,element2,element3...{
+            property:value;
+        }
+        */
+        div,
+        span#a1,
+        span#b1,
+        a[href="https://www.google.com/"] {
+            display: inline-block;
+        }
+
+        /*
+        7. Css Pseudo selector syntax ::
+
+        element::selector{
+            property:value;
+        }
+        */
+        h1::after h1 {
+            content: url('c:\Users\Dell\Downloads\https___www.pngguru.in_storage_uploads_images_Rohit Sharma HD Png Image with new jersey_1689339485_214251006.png');
+
+        }
+        /*
+        8.Pseudo class selector syntax :
+
+        element::selector{
+            property:value;
+        }
+        */
+        div#c1:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>CSS element selector</div>
+    <span id="a1">CSS Id selector. #</span>
+    <span class="b1">CSS class selector</span>
+    <a href="https://www.google.com/">CSS attribute selector</a>
+    <h1>Css Pseudo selector</h1>
+    <div id="c1">Pseudo class selector :</div>
+</body>
+
+</html>
